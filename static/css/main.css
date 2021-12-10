@@ -1,0 +1,135 @@
+body {
+  background: #328f8a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #328f8a,
+    #1f70bb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #328f8a,
+    #1f70bb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+nav {
+  margin-right: 17%;
+}
+
+nav a {
+  float: right;
+  text-decoration: none;
+  color: #002e5b;
+  font-size: 18px;
+  padding: 25px 35px;
+  display: inline-block;
+  transition: all 0.5s ease 0s;
+}
+
+#logo {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #002e5b;
+  font-weight: bold;
+  float: left;
+  padding: 20px;
+  margin-left: 17%;
+}
+
+header {
+  overflow: hidden;
+  background-color: #fde428;
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin: 0px auto;
+  font-size: 26px;
+  padding: 40px 0px;
+  color: #002e5b;
+  text-align: center;
+}
+
+h1 span {
+  font-weight: 400;
+}
+
+label {
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.navbar {
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  background-color: #34495e;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #444;
+  text-align: center; /* step 6 */
+}
+
+.navbar li {
+  display: inline-block; /* step 1 */
+  width: 10%; /* step 4 */
+  margin-right: -4px; /* step 5 */
+}
+
+.navbar li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  border-right: 1px solid #ccc;
+}
+
+.navbar a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+
+.navbar a {
+  font-family: sans-serif;
+  height: 40%; /* vertically center */
+  line-height: 40%; /* vertically center */
+  color: #fff;
+}
+
+.navbar a:hover {
+  background-color: #005f5f;
+}
+
+.navbar a.active {
+  background-color: #eee;
+  color: #444;
+  cursor: default;
+}

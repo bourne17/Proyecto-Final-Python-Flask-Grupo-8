@@ -1,0 +1,59 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="card card-body">
+      <form action="/updateproduct/{{product["Id"]}}" method="POST">
+        <div>
+          <label> Codigo</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="Id" value="{{product["Id"]}}"
+          class="form-control">
+        </div>
+        <div>
+          <label> Descripción</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="Descripcion"
+          value="{{product["Description"]}}" class="form-control">
+        </div>
+        <div>
+          <label> Serial</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="Serial" value="{{product["Serial"]}}"
+          class="form-control">
+        </div>
+        <div>
+          <label> Existencia</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="Existencia" value="{{product["Stock"]}}"
+          class="form-control">
+        </div>
+        <div>
+          <label> Ubicacion</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="Ubicacion" value="{{product["Location"]}}"
+          class="form-control">
+        </div>
+        <div class="form-group">
+          <label> Costo</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="Costo" value="{{product["Cost"]}}"
+          class="form-control">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block">
+            Actualizar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
